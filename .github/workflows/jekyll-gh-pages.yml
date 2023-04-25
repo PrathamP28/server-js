@@ -26,6 +26,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run : node server.js
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
